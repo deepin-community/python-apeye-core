@@ -1,5 +1,34 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-apeye-core (1.1.5-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 1.1.5
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Josenilson Ferreira da Silva <nilsonfsilva@hotmail.com>  Sat, 03 Feb 2024 13:33:10 -0300
+
+python-apeye-core (1.1.4-2) unstable; urgency=medium
+
+  * debian/control:
+      - Added dependencies for running tests
+      - Added Testsuite: autopkgtest-pkg-pybuild
+  * debian/rules: Enabled tests
+
+ -- Josenilson Ferreira da Silva <nilsonfsilva@hotmail.com>  Mon, 01 Jan 2024 12:02:35 -0300
+
+python-apeye-core (1.1.4-1) unstable; urgency=medium
+
+  * New upstream version 1.1.4
+
+ -- Josenilson Ferreira da Silva <nilsonfsilva@hotmail.com>  Sat, 19 Aug 2023 09:44:19 -0300
+
+python-apeye-core (1.1.0-1) unstable; urgency=medium
+
+  [ Josenilson Ferreira da Silva ]
+  * [9f7c461] First and initial Debianization
+    (Closes: #1027765)
+
+  [ Carsten Schoenert ]
+  * [7bbd891] New upstream version 1.1.0
+  * [5d99702] d/gbp.conf: Add basic config for git-buildpackage
+  * [e7c67c1] d/copyright: Add information for public_suffix_list.dat
+  * [24cfcfd] d/copyright: Sort licenses alphabetical
+
+ -- Josenilson Ferreira da Silva <nilsonfsilva@hotmail.com>  Sun, 30 Jul 2023 08:23:39 -0300

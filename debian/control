@@ -1,15 +1,49 @@
-Source: template-repository
-Section: unknown
+Source: python-apeye-core
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Josenilson Ferreira da Silva <nilsonfsilva@hotmail.com>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               pybuild-plugin-pyproject,
+               python3-all,
+               python3-coincidence,
+               python3-coverage,
+               python3-domdf-python-tools,
+               python3-hatch-requirements-txt,
+               python3-hatchling,
+               python3-idna,
+               python3-importlib-metadata,
+               python3-pytest,
+               python3-pytest-cov,
+               python3-pytest-datadir,
+               python3-pytest-httpserver,
+               python3-pytest-regressions,
+               python3-pytest-timeout
+Standards-Version: 4.6.2
+Homepage: https://github.com/domdfcoding/apeye-core
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-apeye-core
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-apeye-core.git
+Testsuite: autopkgtest-pkg-pybuild
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-apeye-core
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Description: Core (offline) functionality for the apeye library
+ Apeye-Core provides functionality to work with APIs in a simplified way and
+ aims to simplify common tasks in the consumption of APIs, such as sending GET,
+ POST, PUT and DELETE requests, passing query parameters, headers, payload and
+ authentication in an easy way. In addition, it provides mechanisms to handle
+ token authentication, cookie management, and request redirection.
+ .
+ The main function of Apeye-Core is to facilitate the consumption of APIs
+ through a simple and intuitive interface. It offers features for making HTTP
+ requests, handling authentication, managing request and response headers,
+ handling errors, and other useful functionality when working with APIs.
+ .
+ The package also includes features to handle errors and exceptions related
+ to communicating with the API, such as timeouts, network errors, and HTTP
+ errors. It allows the use of custom error handlers to handle different types
+ of API error responses.
